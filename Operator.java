@@ -9,4 +9,9 @@ abstract public class Operator {
     }
 
     abstract public void exex(Interpreter inter);
+
+    @Override
+    public String toString() {
+        return getClass().getName() + " " + code;
+    }
 }
