@@ -2,15 +2,15 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Created by ninise on 10.11.15.
- */
 public class OperatorFactory {
+
     static Map<String, Class> ops = new HashMap<>();
 
     static {
         ops.put("PRINT", Print.class);
         ops.put("LET", Let.class);
+        ops.put("IF", If.class);
+        ops.put("GOTO", Goto.class);
     }
 
     public static Operator createOperator(String opName, String substring) {

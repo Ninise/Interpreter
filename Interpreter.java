@@ -2,10 +2,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
-/**
- * Created by ninise on 10.11.15.
- */
 public class Interpreter {
+
     private TreeMap<Integer, Operator> code = new TreeMap<>();
     private Map<String, Double> vars = new HashMap<>();
 
